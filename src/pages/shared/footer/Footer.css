@@ -1,0 +1,15 @@
+.footer-bg {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ugw0_5pSQyQbW1s1zndb2ykauortw42D8adjIcfefz-XArsVtbC4z2-oRSaepEtyzaI&usqp=CAU");
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+}
+
+.gray-font {
+    color: gray;
+}
+
+.lightgray-font {
+    color: lightgray;
+}

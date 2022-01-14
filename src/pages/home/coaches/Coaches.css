@@ -1,0 +1,23 @@
+.coach-bg {
+    background-image: url("./footballBg.jpg");
+    background-color: rgba(12, 9, 9, 0.8) !important;
+    background-blend-mode: hue;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.videoBg {
+    background-image: url("https://strikers.ae/wp-content/uploads/2017/02/h2-img-7-2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+}

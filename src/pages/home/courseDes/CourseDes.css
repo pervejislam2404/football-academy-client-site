@@ -1,0 +1,26 @@
+.containerOne {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6s3uV02fSFSHzPA6SQIdT452dU_156Nmw1w&usqp=CAU");
+    background-color: rgba(2, 1, 1, .8) !important;
+    background-blend-mode: darken !important;
+    background-position: center;
+    background-size: cover;
+    min-height: 55vh;
+}
+
+.containerTwo {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFv2007byifUubjqlpvjkE6Mja4C_mD_2voA&usqp=CAU");
+    background-color: rgba(230, 230, 230, .9) !important;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    min-height: 55vh;
+}
+
+.containerThree {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0YtpV0x63lBpWzB7vPSU2WyRz6K2Ts4Co6w&usqp=CAU");
+    background-color: rgba(2, 1, 1, .6) !important;
+    background-blend-mode: darken !important;
+    background-position: center;
+    background-size: cover;
+    min-height: 55vh;
+}

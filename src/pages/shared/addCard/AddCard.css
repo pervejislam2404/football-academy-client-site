@@ -1,0 +1,6 @@
+.AddCard {
+    position: fixed;
+    top: 2rem;
+    right: 5rem;
+    z-index: 55555555;
+}
