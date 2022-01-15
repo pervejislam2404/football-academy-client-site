@@ -1,5 +1,8 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import Fade from 'react-reveal/Fade';
+
+
 
 const Article = () => {
   return (
@@ -7,6 +10,7 @@ const Article = () => {
       <div className="container py-5">
         <div className="row">
           {/* card-one */}
+          <Fade left>
           <div className="col-12 col-md-6 col-lg-3">
             <Card className="border-0 text-center" style={{backgroundColor:'#DCDCDC'}}>
               <div className="text-center">
@@ -20,9 +24,11 @@ const Article = () => {
               </Card.Body>
             </Card>
           </div>
+          </Fade>
           {/* card-two */}
 
-          <div className="col-12 col-md-6 col-lg-3">
+         <Fade top>
+         <div className="col-12 col-md-6 col-lg-3">
             <Card  className="border-0 text-center"  style={{backgroundColor:'#DCDCDC'}}>
               <div className="text-center">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWepFuN959vQQ8bMpZ3PFDNAeMkWJhj28e9w&usqp=CAU" className="rounded-pill" height="170" width="170" alt="" />
@@ -35,9 +41,11 @@ const Article = () => {
               </Card.Body>
             </Card>
           </div>
+         </Fade>
 
           {/* card-three */}
-          <div className="col-12 col-md-6 col-lg-3">
+         <Fade bottom>
+         <div className="col-12 col-md-6 col-lg-3">
             <Card  className="border-0 text-center"  style={{backgroundColor:'#DCDCDC'}}>
               <div className="text-center">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJDSfLw6Zi-P4a6BOBBgYnOWpCVy21_r9ziw&usqp=CAU" className="rounded-pill" height="170" width="170" alt="" />
@@ -50,10 +58,12 @@ const Article = () => {
               </Card.Body>
             </Card>
           </div>
+         </Fade>
 
           {/* card-four */}
 
-          <div className="col-12 col-md-6 col-lg-3">
+              <Fade right>
+              <div className="col-12 col-md-6 col-lg-3">
             <Card  className="border-0 text-center"  style={{backgroundColor:'#DCDCDC'}}>
               <div className="text-center">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvJZHOFoO_hc5JQbnK5WgRnf7ojzDld433hA&usqp=CAU" className="rounded-pill" height="170" width="170" alt="" />
@@ -66,6 +76,9 @@ const Article = () => {
               </Card.Body>
             </Card>
           </div>
+              </Fade>
+         
+
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ const Blogs = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    axios('http://localhost:4000/featured')
+    axios('https://cryptic-stream-56151.herokuapp.com/featured')
     .then((response) =>{
         dispatch(setFeaturedPost(response.data))
     })

@@ -32,14 +32,14 @@ const AddCard = () => {
 
 
     useEffect(() => {
-        axios('http://localhost:4000/allOrderedProduct')
+        axios('https://cryptic-stream-56151.herokuapp.com/allOrderedProduct')
         .then(res=>setAddedProduct(res.data))
     },[loader])
 
 
 
     const handleDelete = (id) => {
-        axios.delete(`http://localhost:4000/deleteOrderedProduct/${id}`)
+        axios.delete(`https://cryptic-stream-56151.herokuapp.com/deleteOrderedProduct/${id}`)
         .then(res=>{
             console.log(res.data.deletedCount);
                 if(res.data.deletedCount){

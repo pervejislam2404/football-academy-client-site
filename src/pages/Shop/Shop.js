@@ -12,7 +12,7 @@ const Shop = () => {
   let navigate = useNavigate();
 
   useEffect(() => {
-    axios("http://localhost:4000/allProducts").then((res) =>
+    axios("https://cryptic-stream-56151.herokuapp.com/allProducts").then((res) =>
       dispatch(setAllProducts(res.data))
     );
   }, []);

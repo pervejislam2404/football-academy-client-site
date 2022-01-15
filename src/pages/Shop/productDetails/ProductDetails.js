@@ -37,7 +37,7 @@ const ProductDetails = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    axios(`http://localhost:4000/productById/${id}`).then((res) =>
+    axios(`https://cryptic-stream-56151.herokuapp.com/productById/${id}`).then((res) =>
       setProduct(res.data)
     );
   }, [id]);
@@ -56,7 +56,7 @@ const ProductDetails = () => {
   };
 
   useEffect(() => {
-    axios("http://localhost:4000/allProducts").then((res) =>{
+    axios("https://cryptic-stream-56151.herokuapp.com/allProducts").then((res) =>{
       dispatch(setAllProducts(res.data))
       filterRun()
     }
@@ -72,12 +72,12 @@ const ProductDetails = () => {
   }
 
   const handleProductAdd = () => {
-    product.quantity =count;
-    product.size=size;
+    product.quantity =count || 0;
+    product.size=size || 0;
     delete product._id;
     delete product.review;
 
-    axios.post('http://localhost:4000/addedProduct',{product})
+    axios.post('https://cryptic-stream-56151.herokuapp.com/addedProduct',{product})
     .then(res=> {
       if(res.data.acknowledged){
         swal({

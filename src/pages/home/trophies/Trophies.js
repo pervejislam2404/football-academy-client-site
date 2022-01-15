@@ -1,5 +1,8 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import Slide from 'react-reveal/Slide';
+
+
 
 const Trophies = () => {
     return (
@@ -7,7 +10,8 @@ const Trophies = () => {
              <div className="container py-5">
         <div className="row">
           {/* card-one */}
-          <div className="col-12 col-md-6 col-lg-3">
+           <Slide left>
+           <div className="col-12 col-md-6 col-lg-3">
             <Card className="border-0 text-center">
               <div className="text-center">
                 <img src="https://strikers.ae/wp-content/uploads/2017/02/h2-img-9-3.jpg" className=""   alt="" />
@@ -20,8 +24,10 @@ const Trophies = () => {
               </Card.Body>
             </Card>
           </div>
+           </Slide>
           {/* card-two */}
 
+          <Slide top>
           <div className="col-12 col-md-6 col-lg-3">
             <Card  className="border-0 text-center">
               <div className="text-center">
@@ -35,8 +41,10 @@ const Trophies = () => {
               </Card.Body>
             </Card>
           </div>
+          </Slide>
 
           {/* card-three */}
+          <Slide bottom>
           <div className="col-12 col-md-6 col-lg-3">
             <Card  className="border-0 text-center">
               <div className="text-center">
@@ -50,9 +58,11 @@ const Trophies = () => {
               </Card.Body>
             </Card>
           </div>
+          </Slide>
 
           {/* card-four */}
 
+          <Slide right>
           <div className="col-12 col-md-6 col-lg-3">
             <Card  className="border-0 text-center">
               <div className="text-center">
@@ -66,6 +76,7 @@ const Trophies = () => {
               </Card.Body>
             </Card>
           </div>
+          </Slide>
         </div>
       </div>
         </div>
