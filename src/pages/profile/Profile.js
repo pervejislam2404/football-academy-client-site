@@ -47,7 +47,7 @@ const Profile = () => {
 
                {/* table */}
 
-               <div className="container">
+               <div className="container overflow-scroll">
                    <div className="d-flex justify-content-between mt-4 mb-2">
                        <h3>PLAYER PROFILE</h3>
 
@@ -126,7 +126,7 @@ const Profile = () => {
 
                {/* two-column */}
                <div className="container">
-                   <div className="row p-4">
+                   <div className="row p-4 g-4">
                        <div className="col-12 col-md-6 col-lg-6">
                              <div className="bg-white">
                                  <div className="bg-danger ps-2 text-white p-1">Guardian Profile</div>
