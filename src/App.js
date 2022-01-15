@@ -18,6 +18,7 @@ import Shop from './pages/Shop/Shop';
 import ProductDetails from './pages/Shop/productDetails/ProductDetails';
 import Messenger from './pages/shared/messenger/Messenger';
 import AddCard from './pages/shared/addCard/AddCard';
+import Profile from './pages/profile/Profile';
 
 
 
@@ -36,6 +37,7 @@ function App() {
          <Route path="/register" element={<Register/>}/>
          <Route path="/login" element={<Login/>}/>
          <Route path="/shop" element={<Shop/>}/>
+         <Route path="/profile" element={<Profile/>}/>
 
 
          <Route path="/detail/:id" element={<ProductDetails/>}/>

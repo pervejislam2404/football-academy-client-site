@@ -4,6 +4,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.lightgray-bg {
+    background-color: lightgray;
+}
+
 
 /* swipper-css */
 

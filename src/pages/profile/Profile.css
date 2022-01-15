@@ -1,0 +1,23 @@
+.profile-bg {
+    background-image: url("./football-vanue.jpg");
+    background-attachment: fixed;
+    background-color: rgba(189, 175, 160, 0.8);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.big-font {
+    font-weight: 2000;
+    text-shadow: 2px 3px 3px #CE5937;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.red-bg {
+    background-color: #D3002D;
+}
+
+.info-bg {
+    background-color: rgba(240, 240, 240, 0.9);
+}

@@ -1,20 +1,20 @@
 import React from "react";
 import {
-  Button,
   Container,
-  Form,
-  FormControl,
   Nav,
   Navbar,
   Offcanvas,
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
+import { IoPerson } from "react-icons/io5";
+import { IconContext } from "react-icons/lib";
 
 
 
 const Header = () => {
+  const navigate = useNavigate()
   return (
     <div>
       <Navbar className="d-none d-md-block" bg="dark" variant="dark">
@@ -136,14 +136,19 @@ const Header = () => {
 
                     {/* member-login-route */}
                     <Nav.Link className="text-dark fw-bold" href="">
-                    <Link
-                      className="text-decoration-none px-2 text-dark"
-                      to="/login"
-                    >
-                        MEMBER LOGIN
-                    </Link>
+                          <Link
+                            className="text-decoration-none px-2 text-dark"
+                            to="/login"
+                          >
+                              MEMBER LOGIN
+                          </Link>
                       </Nav.Link>
                   </Nav>
+                       <div onClick={()=> navigate("/profile")} className="ms-4">
+                          <IconContext.Provider value={{ color: "white",size:"2.5rem", className: "global-class-name bg-success shadow-lg p-2 rounded-pill" }}>
+                            <IoPerson/>
+                          </IconContext.Provider>
+                       </div>
                 </Navbar.Collapse>
               </Container>
             </Navbar>
